@@ -69,6 +69,7 @@
 		1352E60E1B176AF700182E53 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DD72D1150F832A00216827 /* MagicalRecordInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1352E60F1B176AF700182E53 /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FEC08B18F42DEA002FFC2F /* MagicalRecordLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1352E6101B176AF700182E53 /* MagicalRecordShorthandMethodAliases.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B05B851B02450900354056 /* MagicalRecordShorthandMethodAliases.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29CE9FF920A3447100AF4869 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29CE9FF820A3447100AF4869 /* CocoaLumberjack.framework */; };
 		581ECBF7187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 581ECBF6187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json */; };
 		581ECBF8187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 581ECBF6187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json */; };
 		581ECBF9187F663100084FEE /* ImportMultipleEntitiesWithNoPrimaryKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 581ECBEB187F63FF00084FEE /* ImportMultipleEntitiesWithNoPrimaryKeyTests.m */; };
@@ -637,6 +638,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29CE9FF820A3447100AF4869 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581ECBEB187F63FF00084FEE /* ImportMultipleEntitiesWithNoPrimaryKeyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportMultipleEntitiesWithNoPrimaryKeyTests.m; sourceTree = "<group>"; };
 		581ECBF6187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MultipleEntitiesWithNoPrimaryKey.json; path = Fixtures/MultipleEntitiesWithNoPrimaryKey.json; sourceTree = "<group>"; };
 		9004F5211A94CBCF00A61312 /* MagicalRecord for iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MagicalRecord for iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -821,6 +823,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29CE9FF920A3447100AF4869 /* CocoaLumberjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +869,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29CE9FF720A3447100AF4869 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29CE9FF820A3447100AF4869 /* CocoaLumberjack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		902CE13718F61E170024F47C /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
@@ -991,6 +1002,7 @@
 				C77E5FA513D0CBA600298F87 /* Tests */,
 				90425374187102DC0066DA41 /* Support */,
 				C721C7B113D0A3AF0097AB6F /* Products */,
+				29CE9FF720A3447100AF4869 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
